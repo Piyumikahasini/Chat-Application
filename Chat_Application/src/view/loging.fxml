@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #04d638;">
+         <children>
+            <Label layoutX="222.0" layoutY="6.0" prefHeight="50.0" prefWidth="175.0" text="Chat App" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell" size="39.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="159.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/chat Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="169.0" fitWidth="180.0" layoutX="216.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/user Logo (1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="enterName" layoutX="162.0" layoutY="317.0" onAction="#Txt_name_on_action" prefHeight="25.0" prefWidth="275.0" promptText="Enter Name" />
+      <Label layoutX="266.0" layoutY="293.0" text="UserName">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="388.0" prefHeight="13.0" prefWidth="600.0" style="-fx-background-color: #04d638;" />
+      <Button layoutX="458.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#loginBtnOnAction" style="-fx-background-color: #04f92d;" text="Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="1.53" radius="2.6999999999999997" width="11.27">
+               <input>
+                  <InnerShadow />
+               </input></DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

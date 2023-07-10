@@ -14,12 +14,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="634.0" prefWidth="389.0" style="-fx-background-color: #859398;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
+<AnchorPane prefHeight="634.0" prefWidth="389.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
    <children>
-      <AnchorPane layoutY="537.0" prefHeight="97.0" prefWidth="389.0" style="-fx-background-color: #894CC5;" />
-      <AnchorPane prefHeight="70.0" prefWidth="389.0" style="-fx-background-color: #894CC5;">
+      <AnchorPane layoutY="537.0" prefHeight="97.0" prefWidth="389.0" style="-fx-background-color: #04d638;" />
+      <AnchorPane prefHeight="70.0" prefWidth="389.0" style="-fx-background-color: #04d638;">
          <children>
-            <Label fx:id="lblName" layoutX="90.0" layoutY="17.0" prefHeight="36.0" prefWidth="209.0" text="Ravindu Dinushan" textFill="WHITE">
+            <Label fx:id="lblName" layoutX="90.0" layoutY="17.0" prefHeight="36.0" prefWidth="209.0" text="Hasini Piyumika" textFill="WHITE">
                <font>
                   <Font name="Calisto MT" size="24.0" />
                </font>
@@ -34,18 +34,18 @@
             </ImageView>
             <ImageView fitHeight="41.0" fitWidth="53.0" layoutX="23.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assest/icons8-viber.gif" />
+                  <Image url="@../assest/chat Logo.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
       <ScrollPane fx:id="TxtMassageShowFeild" layoutX="24.0" layoutY="97.0" prefHeight="400.0" prefWidth="345.0">
          <content>
-            <VBox fx:id="vBox" prefHeight="396.0" prefWidth="342.0" />
+            <VBox fx:id="vBox" prefHeight="396.0" prefWidth="342.0" style="-fx-background-color: #ebecee;" />
          </content></ScrollPane>
-      <TextField fx:id="TxtMassageTypeFeild" layoutX="65.0" layoutY="549.0" onAction="#txt_massage_on_action" onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="36.0" prefWidth="231.0" style="-fx-background-radius: 20;">
+      <TextField fx:id="TxtMassageTypeFeild" layoutX="65.0" layoutY="549.0" onAction="#txt_massage_on_action" onMouseClicked="#Mouse_On_Click_Hide_Emogi" prefHeight="36.0" prefWidth="231.0" promptText="Message" style="-fx-background-radius: 20;">
          <font>
-            <Font name="Calibri Bold Italic" size="17.0" />
+            <Font name="Calibri Bold" size="17.0" />
          </font>
       </TextField>
       <ImageView fitHeight="35.0" fitWidth="27.0" layoutX="302.0" layoutY="554.0" onMouseClicked="#btn_cam_on_action" pickOnBounds="true" preserveRatio="true">

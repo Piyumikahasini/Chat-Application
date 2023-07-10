@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -22,6 +23,7 @@ public class LoginFormController {
         stage.setScene(new Scene(FXMLLoader.load(LoginFormController.class.getResource("../view/client.fxml"))));
         stage.close();
         stage.centerOnScreen();
+        stage.getIcons().add(new Image("assest/chat Logo.png"));
         stage.show();
     }
 
@@ -32,6 +34,7 @@ public class LoginFormController {
         stage.setScene(new Scene(FXMLLoader.load(LoginFormController.class.getResource("../view/client.fxml"))));
         stage.close();
         stage.centerOnScreen();
+        stage.getIcons().add(new Image("assest/chat Logo.png"));
         stage.show();
     }
 }
